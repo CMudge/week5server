@@ -15,5 +15,5 @@ app.get('/:fileName', function (req, res) {
 	var fileName = req.params.fileName;
 	console.log(fileName + ' requested');
 	// note that __dirname gives the path to the server.js file
-	res.sendFile(__dirname + fileName);
+	res.sendFile(__dirname + '/' + fileName);
 });
